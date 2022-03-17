@@ -9,5 +9,7 @@ Please be aware that the credentials withing the files have been replaced by pla
 
 In order for the script to run fully automated you will need to add it in your crontab: For Linux: 
 0) Open a terminal 
-1) 1) crontab -e 
-2) 2) At the end of the file add: 15 * * * * [your python directory] [the script directory] &lt;path to your log file> 2>&amp;1
+1) crontab -e 
+2) At the end of the file add: 15 * * * * [YOUR PYTHON'S PATH] [THE SCRIPT'S PATH] [PATH TO YOUR LOG FILE]> 2>&amp;1
+3) Go to the parent directory of where your script is stored and open a terminal window
+4) Type "cmhod 775 [NAME OF YOUR DIRECTORY]"
