@@ -20,4 +20,10 @@ def email_alert(subject,body,to):
 
 
 if __name__ == '__main__':
-    email_alert("hi", "This is a test message", "g.antoniadis21@gmail.com")
+    num_of_shows = 4
+    link_to_play = "https://www.viva.gr/tickets/festival/theater/enigmatikes-parallages/"
+    subject="Tickets are available"
+    body="You should go and checkout this " + link_to_play + \
+        "\n" + "Number of shows: " + str(num_of_shows)
+    email_alert(subject, body, "g.antoniadis21@gmail.com")
+    # email_alert("hi", "This is a test message", "g.antoniadis21@gmail.com")
